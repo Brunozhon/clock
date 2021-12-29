@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Analog Clock</title>
+    <style>
+      .hand {
+        stroke: #ffffff;
+        stroke-width: 2;
+        stroke-linecap: round;
+      }
+      .hand--thick {
+        stroke-width: 7;
+      }
+      .hand--second {
+        stroke: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="200" height="200" viewBox="-100 -100 200 200">
+      <!-- Hour and minute markers -->
+      <circle 
+              cx="0"
+              cy="0"
+              r="90"
+              fill="transparent"
+              stroke="#f0f0c9"
+              stroke-width="7"
+              stroke-dasharray="0.2 0.8"
+              stroke-dashoffset="0.1"
+              pathLength="60"
+      />
+      <circle
+              cx="0"
+              cy="0"
+              r="90"
+              fill="transparent"
+              stroke="#f0f0c9"
+              stroke-width="7"
+              stroke-dasharray="0.2 4.8"
+              stroke-dashoffset="0.1"
+              pathLength="60"
+      />
+    </svg>
+  </body>
+</html>
